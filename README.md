@@ -19,3 +19,5 @@ Docker on both hosts will be using bridge cbr0 with these set:
 
 Kubernetes will run with dns enabled, and kubernetes binaries should be present on classpath.
 Everything from manifests should be on master, in directory /etc/kubernetes/manifests , on minion(s) this directory should be empty.
+
+It should be noted that using these, one can expand network with arbitraty number of minions.
