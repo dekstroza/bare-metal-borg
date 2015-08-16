@@ -17,4 +17,5 @@ Docker on both hosts will be using bridge cbr0 with these set:
 
 -b cbr0 --iptables=false --ip-masq=false --mtu=1446 
 
-Kubernetes will run with dns enabled, all configuration should go to /etc/kubernetes/manifests, and kubernetes binaries should be present on classpath.
+Kubernetes will run with dns enabled, and kubernetes binaries should be present on classpath.
+Everything from manifests should be on master, in directory /etc/kubernetes/manifests , on minion(s) this directory should be empty.
