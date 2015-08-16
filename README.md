@@ -16,7 +16,9 @@ Outer IPv4 Header 20 bytes
 Outer UDP Header 8 bytes 
 +
 VXLAN Header(8 bytes) 
+
 ---------------------
+
 = 1554
 
 MTU 1500 - 1554  = 54 bytes overhead, so we will reduce our default mtu by 54 bytes, 1500 - 54 = 1446
