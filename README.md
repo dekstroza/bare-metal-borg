@@ -10,14 +10,14 @@ HOST2 has eht0 with: 159.107.152.161
 Both hosts should be able to ping each other over those addresses. I am also assuming here eth0 on both hosts has default MTU 1500. MTU on overlay network needs to be reduced, as vxlan will encapsulate traffic, here we will be setting it to 1446, why this number, you may ask:
 
 Inner ethernet frame 1518 
-+ 
+\+ 
 Outer IPv4 Header 20 bytes
-+
+\+
 Outer UDP Header 8 bytes 
-+
+\+
 VXLAN Header(8 bytes) 
 
----------------------
+\---------------------
 
 = 1554
 
