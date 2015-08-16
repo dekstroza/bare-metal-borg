@@ -2,7 +2,9 @@
 Bare metal kubernetes setup with ovs vxlan
 
 In order to run bare metal kubernetes, we need to set up overlay network. In this example, we have two hosts, HOST1 and HOST2, each host has eth0 interface with addresses: 
+
 HOST1 has eth0 with: 159.107.152.3 
+
 HOST2 has eht0 with: 159.107.152.161
 
 Both hosts should be able to ping each other over those addresses. I am also assuming here eth0 on both hosts has default MTU 1500. MTU on overlay network needs to be reduced, as vxlan will encapsulate traffic, here we will be setting it to 1446, why this number, you may ask:
