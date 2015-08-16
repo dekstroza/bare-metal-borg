@@ -13,5 +13,8 @@ We are setting up overlay network 10.244.0.0/16 where in the overlay network:
 HOST1 will have IP 10.244.1.1/24
 HOST2 will have IP 10.244.2.1/24
 
-Docker on both hosts will be using bridge cbr0 with these set: -b cbr0 --iptables=false --ip-masq=false --mtu=1446 
+Docker on both hosts will be using bridge cbr0 with these set: 
+
+-b cbr0 --iptables=false --ip-masq=false --mtu=1446 
+
 Kubernetes will run with dns enabled, all configuration should go to /etc/kubernetes/manifests, and kubernetes binaries should be present on classpath.
