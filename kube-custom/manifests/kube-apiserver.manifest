@@ -14,7 +14,7 @@
         "command": [
           "/bin/sh",
           "-c",
-          "/usr/local/bin/kube-apiserver --service-cluster-ip-range=10.0.0.0/16 --etcd-servers=http://127.0.0.1:4001 --token-auth-file=/dev/null --bind-address=127.0.0.1 --address=0.0.0.0"
+          "/usr/local/bin/kube-apiserver --allow-privileged=true --service-cluster-ip-range=10.0.0.0/16 --etcd-servers=http://127.0.0.1:4001 --token-auth-file=/dev/null --bind-address=127.0.0.1 --address=0.0.0.0"
         ],
         "ports": [
           {
